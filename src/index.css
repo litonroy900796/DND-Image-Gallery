@@ -39,12 +39,25 @@ code {
 .single-image:hover .checkbox {
   opacity: 1;
 }
+@media  (min-width: 768px) {
+  /* Styles for screens with a width of 768 pixels or more */
+  /* Add your CSS rules here */
+}
+
+@media (max-width: 400px) {
+  .grid-layout{
+    
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+   
+  }
+}
 .grid-layout{
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
  
 }
+
 .feature_image{
   grid-column-start: 1;
   grid-column-end: 3;
